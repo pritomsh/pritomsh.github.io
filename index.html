@@ -11,7 +11,26 @@
     <!-- title -->
     <title>Pritom Saha</title>
     <!-- favicon -->
-    <link rel="icon" href="images/icon/PS2.jpg" type="image/png">
+    <!-- <link rel="icon" href="images/icon/PS2.jpg" type="image/png"> -->
+
+    <link rel="icon" id="favicon" href="images/icon/light.png" type="image/png">
+    <script>
+        const favicon = document.getElementById('favicon');
+        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+
+        function updateFavicon() {
+            if (prefersDarkMode.matches) {
+                favicon.href = 'images/icon/dark.jpg';
+            } else {
+                favicon.href = 'images/icon/light.png';
+            }
+        }
+
+        prefersDarkMode.addListener(updateFavicon);
+        updateFavicon(); // Set the initial favicon based on the user's color scheme
+    </script>
+
+
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- include css -->
@@ -87,7 +106,7 @@
                 </div>
                 <br>
 
-        </div>
+            </div>
     </section>
 
 
@@ -286,7 +305,7 @@
             <div class="container">
                 <div class="footer-content">
                     <p class="order-md-1 order-2"><span style="font-size: 18px;"></p>
-                        <p class="order-md-1 order-2"><span style="font-size: 18px;">©</span> Pritom Saha, 2023 </p>
+                    <p class="order-md-1 order-2"><span style="font-size: 18px;">©</span> Pritom Saha, 2023 </p>
                 </div>
             </div>
         </div>
