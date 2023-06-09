@@ -1,25 +1,25 @@
 .header_section {
-    background-image: url("../images/01.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: rgb(187, 151, 151);
+    background-color: rgb(245, 242, 242);
     overflow: hidden
 }
 
 .header_section .header_content {
-    padding: 10px 0 10px;
+    padding: 5px 0 10px;
     align-items: center;
     position: relative;
     min-height: 70vh;
     display: flex
 }
+ 
 
 .header_section .header_content h2 {
     margin-bottom: 5px;
     line-height: 56px;
     font-size: 50px;
-    color: rgb(0, 0, 0);
+    color: rgb(248, 243, 243);
     font-weight: 500
 }
 
@@ -27,7 +27,7 @@
     margin-bottom: 5px;
     line-height: 35px;
     font-weight: 400;
-    color: rgb(0, 0, 0)
+    color: rgb(243, 237, 237)
 }
 
 .header_section .header_content p {
@@ -35,7 +35,7 @@
     font-weight: 300;
     max-width: 550px;
     font-size: 16px;
-    color: rgb(0, 0, 0)
+    color: rgb(243, 240, 240)
 }
 
 .header_section .header_content ul {
@@ -95,10 +95,15 @@
 
 .about_section {
     position: relative;
-    background: rgb(187, 151, 151);
-    padding:50px 0
+    background: rgb(255, 255, 255);
+    padding:100px 0
 }
 
+.dl_section {
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding:5px 0
+}
 .about_section #single_about {
     position: absolute;
     z-index: -1;
@@ -198,6 +203,95 @@
     line-height: 24px;
     margin: 0
 }
+
+
+
+
+.edu_section {
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding:50px 0
+}
+
+.edu_section .accordion_content h6 {
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    color: #000000;
+    line-height: 20px;
+    border-bottom: 1px solid #ebebeb;
+    cursor: pointer;
+    position: relative
+}
+
+.edu_section .accordion_content h6::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    background: #000000;
+    position: absolute;
+    right: 20px;
+    height: 2px;
+    top: 24px;
+    z-index: 999
+}
+
+.edu_section .accordion_content h6::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    background: #000000;
+    position: absolute;
+    right: 26px;
+    height: 14px;
+    top: 18px;
+
+}
+
+.edu_section .accordion_content .card-body {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.edu_section .accordion_content:hover h6::after,
+.edu_section .accordion_content:hover h6.cola,
+.edu_section .accordion_content:hover h6::before {
+    background: #e23517
+}
+
+.edu_section .accordion_content .collapse {
+    position: relative
+}
+
+.edu_section .accordion_content .collapse.show {
+    border-bottom: 1px solid #87d10f
+}
+
+.edu_section .accordion_content .collapse.show::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 2px;
+    height: 14px;
+    top: -33px;
+    right: 26px;
+    background: #db0e0e
+}
+
+.edu_section .accordion_content p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 24px;
+    margin: 0
+}
+
+
+
+
 
 .service_section {
     padding: 75px 0;
