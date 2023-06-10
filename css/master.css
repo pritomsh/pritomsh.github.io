@@ -384,12 +384,12 @@ ol {
     position: relative;
     font-weight: 500;
     font-size: 21px;
-    color: rgb(37, 35, 35);
+    color: rgb(228, 219, 219);
 }
 
 .footer-section .contact-info h5::before {
     display: inline-block;
-    background: rgb(37, 35, 35);
+    background: rgb(231, 225, 225);
     position: absolute;
     content: "";
     width: 65px;
@@ -401,17 +401,17 @@ ol {
 .footer-section .contact-info p {
     margin-bottom: 3px;
     font-size: 15px;
-    color: #bcbcbc
+    color: #f3ecec
 }
 
 .footer-section .contact-info p a {
     transition: all .2s;
-    color: #bcbcbc
+    color: #e9e3e3
 }
 
 .footer-section .contact-info p a:hover {
     text-decoration: underline;
-    color: #fff
+    color: #ece4e4
 }
 
 .footer-section .contact-info p i {
@@ -470,8 +470,8 @@ ol {
 }
 
 .footer-section .last-footer {
-    border-top: 1px solid #2e2e2e;
-    background: rgb(37, 35, 35);
+    border-top: 1px solid #dbd9d9;
+    background: rgb(248, 245, 245);
     padding: 25px 0
 }
 
@@ -483,8 +483,8 @@ ol {
 }
 
 .footer-section .last-footer .footer-content p {
-    font-size: 14px;
-    color: #bcbcbc;
+    font-size: 12px;
+    color: #0a0a0a;
     margin: 5px 0
 }
 

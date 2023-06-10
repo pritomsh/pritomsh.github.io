@@ -99,11 +99,7 @@
     padding:100px 0
 }
 
-.dl_section {
-    position: relative;
-    background: rgb(255, 255, 255);
-    padding:5px 0
-}
+
 .about_section #single_about {
     position: absolute;
     z-index: -1;
