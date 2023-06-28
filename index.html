@@ -13,16 +13,16 @@
     <!-- favicon -->
     <!-- <link rel="icon" href="images/icon/PS2.jpg" type="image/png"> -->
 
-    <link rel="icon" id="favicon" href="images/icon/light.png" type="image/png">
+    <link rel="icon" type="image/x-icon" id="favicon" href="images/icon/white.ico">
     <script>
         const favicon = document.getElementById('favicon');
         const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
 
         function updateFavicon() {
             if (prefersDarkMode.matches) {
-                favicon.href = 'images/icon/dark.jpg';
+                favicon.href = 'images/icon/white.ico';
             } else {
-                favicon.href = 'images/icon/light.png';
+                favicon.href = 'images/icon/blue.ico';
             }
         }
 
@@ -57,8 +57,9 @@
                         <li><a href="#welcome" class="nav-link active">Welcome</a></li>
                         <li><a href="#education" class="nav-link">Education</a></li>
                         <li><a href="#eduskill" class="nav-link">Skills</a></li>
-                        <li><a href="#research" class="nav-link">Research</a></li>
-                        <li><a href="#DL" class="nav-link">Deep Learning</a></li>
+                        <li><a href="#research" class="nav-link">Research Interest</a></li>
+                        <li><a href="#DL" class="nav-link">Deep Learning Project</a></li>
+                        <li><a href="#DL" class="nav-link">Deep Analysis Project</a></li>
                         <li><a href="#contact" class="nav-link">Contact Me</a></li>
                     </ul>
                 </div>
@@ -93,21 +94,7 @@
 
 
 
-    <!--  Deep Learning -->
 
-    <section id="DL" class="dl_section">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="title_area">
-                        <h2>Deep Learning</h2>
-                    </div>
-                </div>
-                <br>
-
-            </div>
-    </section>
 
 
 
@@ -240,7 +227,21 @@
         </div>
     </section>
 
+    <!--  Deep Learning -->
 
+    <section id="DL" class="dl_section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="title_area">
+                        <h2>Deep Learning</h2>
+                    </div>
+                </div>
+                <br>
+
+            </div>
+    </section>
 
 
 
