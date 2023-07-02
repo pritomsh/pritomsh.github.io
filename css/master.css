@@ -13,7 +13,7 @@
 html,
 body {
     font-family: "Rubik", sans-serif;
-    color: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
 
 }
 
@@ -127,7 +127,7 @@ ol {
 .navbar {
     transition: all .2s;
     position: relative;
-    background: rgb(255, 255, 255);
+    background: rgb(219, 206, 206);
     padding: 0;
     user-select: none
 }
