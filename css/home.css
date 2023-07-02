@@ -511,6 +511,92 @@
     color: #000000
 }
 
+/* Research section */
+.research_section {
+    position: relative;
+    background: rgb(219, 206, 206);
+    padding:20px 0px;
+}
+
+
+.research_section #single_about {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 0;
+    top: -75px;
+    left: 0
+}
+
+.research_section .about_contant {
+    padding: 12px 0 25px
+}
+
+.research_section .about_contant p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000
+}
+
+.research_section .accordion_content:first-child h6 {
+    border-top: 1px solid #000000
+}
+.research_section h3 {
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #000000
+}
+
+/* Educational Skills section */
+.edu_skills_section {
+    position: relative;
+    background: rgb(219, 206, 206);
+    padding:20px 0px;
+}
+
+
+.edu_skills_section #single_about {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 0;
+    top: -75px;
+    left: 0
+}
+
+.edu_skills_section .about_contant {
+    padding: 12px 0 25px
+}
+
+.edu_skills_section .about_contant p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000
+}
+
+.edu_skills_section .accordion_content:first-child h6 {
+    border-top: 1px solid #000000
+}
+.edu_skills_section h3 {
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #000000
+}
+.edu_skills_section h5 {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #000000
+}
+.edu_skills_section ul,
+.edu_skills_section li {
+    color: #000000;
+}
+
 
 
 
