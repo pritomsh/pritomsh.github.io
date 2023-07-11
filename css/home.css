@@ -597,8 +597,73 @@
     color: #000000;
 }
 
+/* contact section */
+.contact_section {
+    position: relative;
+    background: rgb(219, 206, 206);
+    padding: 10px 0;
+}
+
+.contact_section .about_contant {
+    padding: 0;
+}
+
+.contact_section .about_contant p {
+    margin-bottom: 10px;
+}
+
+.contact_section .accordion_content:first-child h6 {
+    border-top: none;
+}
+
+.contact_section h3 {
+    margin-bottom: 10px;
+}
+
+.contact_section h5 {
+    margin-bottom: 5px;
+}
 
 
+
+.contact_section h2 {
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #047cba;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.social-icons span {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+}
 
 
 
