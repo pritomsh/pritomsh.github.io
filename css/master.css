@@ -34,7 +34,8 @@ p {
 
 img {
     max-width: 100%;
-    width: auto
+    width: auto;
+    height: auto
 }
 
 ul,
@@ -258,7 +259,7 @@ ol {
 
     .navbar {
         border-bottom: 1px solid rgba(13, 236, 80, 0.05);
-        background: #fff
+        background: rgb(219, 206, 206);
     }
 
     .navbar .brand img.logo-white {
@@ -470,8 +471,8 @@ ol {
 }
 
 .footer-section .last-footer {
-    border-top: 1px solid #dbd9d9;
-    background: rgb(248, 245, 245);
+    /* border-top: 1px solid #dbd9d9; */
+    background: rgb(219, 206, 206);
     padding: 25px 0
 }
 
