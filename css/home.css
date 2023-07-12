@@ -634,35 +634,37 @@
     margin-bottom: 10px;
 }
 
+
+/* Socail icon setting */
+
 .social-icons {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: left;
 }
 
 .social-icons a {
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-decoration: none;
     color: #000000;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #047cba;
+    font-size: 14px;
+    margin: 5px;
 }
 
 .social-icons i {
-    font-size: 24px;
-    margin-bottom: 5px;
+    margin-right: 5px;
 }
 
-.social-icons span {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #000000;
+/* Media queries for responsiveness */
+@media screen and (max-width: 576px) {
+    .social-icons a {
+        flex-basis: 40%;
+    }
+    
+    .social-icons a:nth-child(even) {
+        justify-content: flex-end;
+    }
 }
 
 
