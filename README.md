@@ -1,7 +1,8 @@
 Searching, Learning ---------------------------->>>>>>>>>>>>>>> 
 I hope this is very simple and light 
-## Authors
+![image](https://github.com/pritomsh/pritomsh.github.io/assets/58429037/d0db6a01-4f32-4ade-bfb8-6ebba64d2fe7)
 
+## Authors
 <div style="display: flex; align-items: center;">
     <img src="https://avatars.githubusercontent.com/pritomsh" alt="Profile Picture" width="100" height="100" style="border-radius: 50%; margin-right: 20px;">
     <div>
