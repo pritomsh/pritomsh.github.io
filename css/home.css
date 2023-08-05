@@ -3,21 +3,85 @@
 @import"https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css";
 
 /* Add your custom CSS styles here, if needed */
-html,
-body {
-  font-family: "Rubik", sans-serif;
-  color: rgb(0, 0, 0);
-
-}
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
+  text-align: left;
   background: linear-gradient(to right, #78868a 0%, #bbdee0 100%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
+.container {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  text-align: left;
+}
+
+.info-section {
+  width: 60%;
+  vertical-align: middle;
+  text-align: left; 
+  
+}
+.info-section p {
+  text-align: left; /* Align the text in the <p> tag to the left */
+}
+
+
+.profile-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .info-section {
+    width: 100%;
+    display: block;
+  }
+
+  .profile-image {
+    max-width: 100%;
+  }
+}
+/* Responsive media queries */
+@media (min-width: 1020px) {
+  .info-section {
+    width: 100%;
+    display: block;
+  }
+
+  .profile-section {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+.eduSkills {
+  padding: 00px 00px;
+}
+
+.eduSkills table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.eduSkills th,
+.eduSkills td {
+  border: 1px solid black; /* Add border to each table element */
+  padding: 8px;
+}
+
+
 
 p {
   line-height: 24px;
@@ -45,62 +109,43 @@ p {
   text-align: left;
 }
 
-.info-section {
-  width: 100%;
-  text-align: center;
-}
 
-.profile-section {
-  width: 100%;
-  text-align: center;
-}
 
 .footer {
   text-align: right;
 }
 
-/* Responsive media queries */
-@media (min-width: 768px) {
-  .info-section {
-    width: 65%;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-  }
 
-  .profile-section {
-    width: 30%;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-  }
-}
 
 /* Responsive table */
-.table-responsive {
+/* .table-responsive {
   overflow-x: auto;
-}
+} */
 
-table {
+/* table {
   border-collapse: collapse;
   width: 100%;
   color: black;
   /* Set text color to black */
-}
 
-th,
-td {
+
+/* .edu .th {
   border: 1px solid black;
   padding: 8px;
 }
 
-/* table {
+td {
+  border: 1px solid black;
+  padding: 8px;
+} */ 
+
+/* .edu .table {
   border-collapse: collapse;
   width: 100%;
   color: black;            
 }
 
-th, td {
+.edu .th, td {
   border: 1px solid black;
   padding: 8px;
 } */
@@ -147,5 +192,11 @@ th, td {
 
 .social-ico .fab.fa-researchgate {
   color: #000000;
+  margin-left: 15px;
+  font-size: 20px;
+}
+.social-ico .far.fa-envelope {
+  color: #000000;
+  margin-left: 15px;
   font-size: 20px;
 }
