@@ -75,19 +75,19 @@ body {
 .eduSkills {
   padding: 00px 00px;
 }
-
 .eduSkills table {
   width: 100%;
   border-collapse: collapse;
 }
-
 .eduSkills th,
 .eduSkills td {
-  border: 1px solid black; /* Add border to each table element */
+  border-bottom: 1px solid black; /* Adjust the thickness and color as needed */
   padding: 8px;
 }
 
-
+th, td {
+  text-align: left; /* Adjust text alignment and padding as needed */
+}
 
 p {
   line-height: 24px;
@@ -96,14 +96,10 @@ p {
   color: #000000
 }
 
-
-
 .section {
   padding: 00px 00px;
   text-align: left;
 }
-
-
 
 .footer {
   text-align: right;
@@ -138,13 +134,11 @@ p {
   margin-left: 15px;
   font-size: 20px;
 }
-
 .social-ico .fab.fa-github {
   margin-left: 15px;
   color: #000000;
   font-size: 20px;
 }
-
 .social-ico .fab.fa-researchgate {
   color: #000000;
   margin-left: 15px;
@@ -155,3 +149,10 @@ p {
   margin-left: 15px;
   font-size: 20px;
 }
+.social-ico .fa-brands.fa-orcid {
+  color: #000000;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+/* Table */
