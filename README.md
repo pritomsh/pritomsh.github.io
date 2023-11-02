@@ -1,6 +1,6 @@
 Searching, Learning ---------------------------->>>>>>>>>>>>>>> 
 I hope this is very simple and light 
-![image](https://github.com/pritomsh/pritomsh.github.io/assets/58429037/d0db6a01-4f32-4ade-bfb8-6ebba64d2fe7)
+![image](https://github.com/pritomsh/pritomsh.github.io/assets/58429037/1eae5e41-7b5f-4fc3-84ce-5775a79239be)
 
 ## Authors
 <div style="display: flex; align-items: center;">
