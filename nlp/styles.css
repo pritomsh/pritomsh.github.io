@@ -1,0 +1,144 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    margin: 20px auto;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background: #444;
+    color: #fff;
+    padding: 25px;
+    width: 120px;
+    height: 90vh; /* Full height */
+    position: fixed;
+    top: 10px; /* Start at the top */
+    left: 2px;
+    border-radius: 10px; /* No border radius for full height */
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #555;
+    padding-left: 10px;
+}
+
+.submenu > a {
+    cursor: pointer;
+}
+
+.submenu .subnav {
+    display: none;
+    margin-left: 15px;
+}
+
+.submenu .subnav.show {
+    display: block;
+}
+
+.submenu .subnav a {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.submenu .subnav a:hover {
+    padding-left: 10px;
+}
+
+/* Main content styles */
+.main-content {
+    margin-left: 220px; /* Adjust this margin based on sidebar width */
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease-in-out;
+    width: calc(100% - 220px); /* Ensure it takes up the full width minus sidebar */
+}
+
+/* Footer styles */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Hamburger menu styles */
+.nav-toggle {
+    position: fixed;
+    top: 25px;
+    left: 10px;
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 2000; /* Above sidebar */
+}
+
+.nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: #e21313;
+
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: #e21313;
+    }
+}
