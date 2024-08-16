@@ -7,6 +7,24 @@
     <title>NLP by Pritom Saha</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    <meta property="og:image" content="white.ico">
+    <link rel="shortcut icon" href="white.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" id="favicon" href="white.ico">
+    <!-- <link rel="shortcut icon" href="images/icon/white.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" id="favicon" href="images/icon/white.ico"> -->
+    <script>
+        const favicon = document.getElementById('favicon');
+        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+        function updateFavicon() {
+            if (prefersDarkMode.matches) {
+                favicon.href = 'white.ico';
+            } else {
+                favicon.href = 'blue.ico';
+            }
+        }
+        prefersDarkMode.addListener(updateFavicon);
+        updateFavicon(); 
+    </script>
 </head>
 
 <body>
@@ -74,15 +92,21 @@
                 simple example to get you started.
                 NLP plays a rule between machine Learning and Deep Learning. when your text is data in that time you
                 need to use NLP.
+                 Here, I write theory and implement code with pytorch.
 
 
             </p>
 
             <h2 id="regularexpressions">Regular Expressions</h2>
-            <p>A formal language for specifying text strings.
-                Disjunctions: letters inside square brackets []
+            <p>A formal language for specifying text strings. <br>
+                Simpliest fundamental tool of regular expression is <b>Disjunctions:</b> letters inside square brackets []
                 you can check your regular expressios conditions in this website:
                 <a href="https://regexpal.com" target="_blank">regexpal.com</a>
+                <br>
+
+                another fundamental of regularexpressions is Negations in Disjunctions.
+                <br>
+                Negations [^ Ss] - carat means negation only when first in []
             </p>
 
             <!-- Books Section -->
@@ -97,8 +121,12 @@
             <!-- References Section -->
             <h2 id="references">References</h2>
             <ul>
+                <h4>Youtube Course</h4>
                 <li><a href="https://youtube.com/playlist?list=PLoROMvodv4rOFZnDyrlW3-nI7tMLtmiJZ&si=sbKdDwHRMdLhvt6a" target="_blank">
                     Natural Language Processing with Dan Jurafsky and Chris Manning</a></li>
+                    <li><a href="https://youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4&si=adT14T0uwgOMAt-D" target="_blank">
+                        CS224N: NLP with Deep Learning</a></li>
+                    
                 <!-- Add more references as needed -->
             </ul>
         </div>
